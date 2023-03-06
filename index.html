@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Converter</title>
+</head>
+
+<body>
+
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="title-container">
+            <h1>Convertisseur monnaie</h1>
+        </div>
+
+        <div class="form-group">
+            <div class="input">
+                <input type="number" id="valeur" placeholder="Entrer une valeur">
+            </div>
+            <label for="unite-entree">De :</label>
+            <select id="unite-entree">
+                <option selected>Choisir la monnaie</option>
+                <option value="AFR">AFR - Ancien Franc</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="FRF">FRF - Franc</option>
+                <option value="USD">USD - US Dollar</option>
+            </select>
+        </div>
+        <div class="echanger">
+            <span onclick="echanger()"><i class="fa-solid fa-arrows-rotate"></i></span>
+        </div>
+
+        <div class="form-group">
+            <label for="unite-sortie">à :</label>
+            <select id="unite-sortie">
+                <option selected>Choisir la monnaie</option>
+                <option value="AFR">AFR - Ancien Franc</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="FRF">FRF - Franc</option>
+                <option value="USD">USD - US Dollar</option>
+            </select>
+        </div>
+
+        <div class="struct">
+            <button class="button" id="convertir">Convert</button>
+        </div>
+        <div class="resultat" id="resultat"></div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
